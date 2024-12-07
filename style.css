@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #0B001A;
     font-family: Montserrat;
@@ -10,18 +13,15 @@ li,ul {
     margin: 0; 
     padding: 0;
 }
-button {
-    all: unset; /* Removes all inherited and default browser styles */
-    cursor: pointer; /* Ensures the pointer cursor is maintained */
-}
 
-/* Add custom styles below */
 button {
     display: inline;
     padding: 0px;
     border: none;
-    font-family: inherit; /* Ensures the button inherits the font of its container */
+    font-family: inherit;
     text-align: end;
+    all: unset; 
+    cursor: pointer; 
 }
 
 
@@ -90,7 +90,6 @@ text-transform: uppercase;
 }
 
 h1{
-    color:#E9DEFF;
     color: #E9DEFF;
 font-size: 100px;
 font-weight: 500;
@@ -103,12 +102,9 @@ text-decoration-skip-ink: none;
 }
  h1 span{
     font-family: Georgia;
-font-size: 100px;
 font-style: italic;
 font-weight: 400;
-line-height: 100px;
 letter-spacing: -0px;
-text-underline-position: from-font;
 text-decoration-skip-ink: none;
 background: -webkit-linear-gradient(#8338EC, #B923FF);
 background-clip: text;
@@ -148,7 +144,7 @@ color: #E9DEFF;
     gap: 24px;
     
 }
-.card h5,
+.card h2,
  .card p,
  .card span
   {
@@ -160,7 +156,7 @@ color: #E9DEFF;
     padding: 20px;
 }
 
-.card h5{
+.card h2{
     font-size: 32px;
     font-weight: 400;
 }
@@ -192,7 +188,7 @@ text-decoration-skip-ink: none;
 .case-study-text{
     display: grid;
 }
-.case-study h6{
+.case-study .bold-text{
 font-size: 14px;
 font-weight: 400;
 line-height: 14px;
@@ -203,7 +199,7 @@ text-decoration-skip-ink: none;
 margin: 0px;
 
 }
-.case-study h3{
+.case-study .head-text{
 font-size: 50px;
 font-weight: 500;
 line-height: 50px;
@@ -257,7 +253,7 @@ font-weight: 500;
 .c-s-t{
 position: relative;
 }
-.trailhive h6,.trailhive h3,.trailhive span,.trailhive p {
+.case-study-heading .bold-text,.case-study-heading .head-text,.trailhive span,.trailhive p {
     color: #E9DEFF;
 }
 
@@ -280,14 +276,11 @@ display: grid;
     padding: 60px 40px;
 }
 
-.award-container h3 {
+.award-container h4 {
 font-size: 50px;
 font-weight: 500;
 line-height: 50px;
 letter-spacing: -0.02em;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
 color: #0B001A;
 margin: 0px;
 }
@@ -301,23 +294,15 @@ margin: 0px;
 }
 
 .short-text-1 {
-    font-family: Montserrat;
 font-size: 22px;
 font-weight: 500;
 line-height: 35.2px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
 }
 
 .short-text-2 {
-    font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
 line-height: 22.4px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
 }
 hr{
     width: 100%;
@@ -329,7 +314,7 @@ hr{
    justify-items: center;
 }
 
- .footer-text h2{
+ .footer-text h5{
 font-size: 100px;
 font-weight: 500;
 line-height: 100px;
