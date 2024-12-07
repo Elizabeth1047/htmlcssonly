@@ -29,13 +29,19 @@ li ,a {
     all: unset; 
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 li a:hover, li a:focus {
-    text-decoration: none;
+    border-bottom: 1px solid #E9DEFF ;
     color: inherit;
+    cursor: pointer;
 }
-section, footer{
+li a span:hover, li a span:focus {
+    font-size: 20px;
+    cursor: pointer;
+}
+section,article, footer{
     border-radius: 40px;
     margin-top: 40px;
 }
@@ -80,6 +86,7 @@ text-transform: uppercase;
   border: 1px solid transparent;
   border-radius: 1.75rem;
   box-shadow: 0 0 10px 5px #A22DF71A;
+  cursor: pointer;
 }
 
 h1{
@@ -104,6 +111,7 @@ letter-spacing: -0px;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 background: -webkit-linear-gradient(#8338EC, #B923FF);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
@@ -121,6 +129,7 @@ text-decoration-skip-ink: none;
 .watermark-container{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
     
 }
 
@@ -315,12 +324,12 @@ hr{
     border: 0;
     border-top: 1px solid #0B001A;
 }
-footer .header-text{
+ .footer-text{
     display: grid;
    justify-items: center;
 }
 
-footer .header-text h2{
+ .footer-text h2{
 font-size: 100px;
 font-weight: 500;
 line-height: 100px;
