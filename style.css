@@ -253,7 +253,7 @@ font-weight: 500;
 .c-s-t{
 position: relative;
 }
-.case-study-heading .bold-text,.case-study-heading .head-text,.trailhive span,.trailhive p {
+.trailhive .bold-text,.trailhive .head-text,.trailhive span,.trailhive p {
     color: #E9DEFF;
 }
 
