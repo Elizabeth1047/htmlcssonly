@@ -1,0 +1,337 @@
+body{
+    background-color: #0B001A;
+    font-family: Montserrat;
+    padding: 15px;
+}
+li,ul {
+    all: unset; 
+    display: list-item; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+button {
+    all: unset; /* Removes all inherited and default browser styles */
+    cursor: pointer; /* Ensures the pointer cursor is maintained */
+}
+
+/* Add custom styles below */
+button {
+    display: inline;
+    padding: 0px;
+    border: none;
+    font-family: inherit; /* Ensures the button inherits the font of its container */
+    text-align: end;
+}
+
+
+li ,a {
+    all: unset; 
+    text-decoration: none;
+    color: inherit;
+}
+
+li a:hover, li a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+section, footer{
+    border-radius: 40px;
+    margin-top: 40px;
+}
+
+header, footer {
+    background-color: #1E0044;
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 24px;
+}
+nav span{
+    color:#E9DEFF;
+    color: #E9DEFF;
+font-size: 14px;
+font-weight: 500;
+line-height: 14px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+text-transform: uppercase;
+
+}
+ nav button {
+  background: transparent;
+  padding: 10px 14px;
+  background-image: linear-gradient(90deg, #1E0044, #1E0044),
+    linear-gradient(90deg, #8338EC, #B923FF);
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  border: 1px solid transparent;
+  border-radius: 1.75rem;
+  box-shadow: 0 0 10px 5px #A22DF71A;
+}
+
+h1{
+    color:#E9DEFF;
+    color: #E9DEFF;
+font-size: 100px;
+font-weight: 500;
+line-height: 100px;
+letter-spacing: -0.05em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+h1 span{
+    font-family: Georgia;
+font-size: 100px;
+font-style: italic;
+font-weight: 400;
+line-height: 100px;
+letter-spacing: -0px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+background: -webkit-linear-gradient(#8338EC, #B923FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.header-text p{
+    color:#E9DEFF;
+font-size: 24px;
+font-weight: 400;
+line-height: 28.8px;
+letter-spacing: -0.04em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.watermark-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.watermark-container span{
+font-size: 14px;
+font-weight: 500;
+line-height: 22.4px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #E9DEFF;
+   align-self: flex-end;
+}
+.cards-container{
+    display: flex;
+    gap: 24px;
+    
+}
+.card h5,
+ .card p,
+ .card span
+  {
+    color: #E9DEFF;
+}
+.card{
+    background: -webkit-linear-gradient(#8338EC, #B923FF);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card h5{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.card p{
+font-size: 14px;
+font-weight: 400;
+line-height: 22.4px;
+text-decoration-skip-ink: none;
+
+}
+.card span{
+    padding: 5.9px 11.8px;
+    border-radius: 19.17px;
+    border: 1px solid white;
+}
+.case-study{
+    background-image: url(/images/case-study-background.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    border-radius: 40px;
+    justify-content: space-between;
+    margin: 40px 0px 40px 0px;
+
+}
+.case-study-text{
+    display: grid;
+}
+.case-study h6{
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+text-align: left;
+color: #0B001A;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin: 0px;
+
+}
+.case-study h3{
+font-size: 50px;
+font-weight: 500;
+line-height: 50px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #0B001A;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin: 20px 0px 20px 0px;
+
+}
+.case-study .case-study-heading span {
+    padding: 5.9px 11.8px;
+    border-radius: 19.17px;
+    border: 1px solid #0B001A ;
+}
+.text-button-container{
+    align-self:self-end ;
+}
+.case-study p{
+font-size: 14px;
+font-weight: 400;
+line-height: 22.4px;
+text-align: left;
+color: #0B001A;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+padding-right: 100px;
+
+}
+.case-study button{
+    background: transparent;
+  padding: 10px 14px;
+  background-image: linear-gradient(90deg, #E9DEFF, #E9DEFF),
+    linear-gradient(90deg, #8338EC, #B923FF);
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  border: 1px solid transparent;
+  border-radius: 1.75rem;
+  box-shadow: 0 0 10px 5px #A22DF71A;
+
+}
+.case-study span{
+font-size: 14px;
+font-weight: 500;
+
+}
+.trailhive{
+    background-image: url(/images/trail-hire-image.png);
+}
+.c-s-t{
+position: relative;
+}
+.trailhive h6,.trailhive h3,.trailhive span,.trailhive p {
+    color: #E9DEFF;
+}
+
+.trailhive .case-study-heading span{
+border: 1px solid #E9DEFF ;
+}
+.trailhive button{
+background-image: linear-gradient(90deg, #0B001A, #0B001A),
+    linear-gradient(90deg, #8338EC, #B923FF);
+}
+.absolute-image{
+    position: absolute;
+    right: 43.5%;
+    top: 10%;
+}
+.award-container{
+    background-color: #E9DEFF;
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 40px;
+}
+
+.award-container h3 {
+font-size: 50px;
+font-weight: 500;
+line-height: 50px;
+letter-spacing: -0.02em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #0B001A;
+margin: 0px;
+}
+.award-container a{
+    display: flex;
+    justify-content: space-between;
+}
+.short-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.short-text-1 {
+    font-family: Montserrat;
+font-size: 22px;
+font-weight: 500;
+line-height: 35.2px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+
+.short-text-2 {
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 22.4px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #0B001A;
+}
+footer .header-text{
+    display: grid;
+   justify-items: center;
+}
+
+footer .header-text h2{
+font-size: 100px;
+font-weight: 500;
+line-height: 100px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #E9DEFF;
+
+}
+    
+
+
+
