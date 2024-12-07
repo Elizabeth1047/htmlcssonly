@@ -169,7 +169,7 @@ text-decoration-skip-ink: none;
     border: 1px solid white;
 }
 .case-study{
-    background-image: url(images/case-study-background.png);
+    background-image: url(./images/case-study-background.png);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -243,7 +243,7 @@ font-weight: 500;
 
 }
 .trailhive{
-    background-image: url(images/trail-hire-image.png);
+    background-image: url(./images/trail-hire-image.png);
 }
 .c-s-t{
 position: relative;
