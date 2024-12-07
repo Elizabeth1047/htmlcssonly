@@ -1,11 +1,17 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+body{display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+main{
+    width: 100%;
     background-color: #0B001A;
     font-family: Montserrat ,system-ui, sans-serif;
     padding: 20px;
     margin: 0px;
+     max-width: 1600px;
 }
 li,ul,h1,h2,h3,h4,h5,h6,p {
     all: unset; 
@@ -62,6 +68,9 @@ nav{
     align-items: center;
 
 }
+.hambuger{
+    display: none;
+}
 
 ul{
     display: flex;
@@ -116,6 +125,7 @@ letter-spacing: -0.05em;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
+text-wrap: wrap;
 
 }
  h1 span{
@@ -289,9 +299,6 @@ font-size: 14px;
 font-weight: 500;
 
 }
-.c-s-t{
-position: relative;
-}
 .trailhive{
     background-image: url(./images/trail-hire-image.png);
 }
@@ -307,9 +314,12 @@ border: 1px solid #E9DEFF ;
 background-image: linear-gradient(90deg, #0B001A, #0B001A),
     linear-gradient(90deg, #8338EC, #B923FF);
 }
+.case-study-image{
+    position: relative;
+}
 .absolute-image{
     position: absolute;
-    right: 45.5%;
+    left: -12%;
     top: 10%;
 }
 .award-container{
@@ -383,7 +393,57 @@ text-decoration-skip-ink: none;
 color: #E9DEFF;
 
 }
-    
+    @media screen and (max-width: 805px) {
+    header ul,header button{
+        display: none;
+    }
+    .hambuger{
+        display: block;
+    }
+    h1{
+font-size: 50px;
+font-weight: 250;
+line-height: 50px;
+
+}
+.cards-container ,.tag-container{
+    flex-wrap: wrap;
+
+}
+.case-study {
+    grid-template-columns: 1fr;
+}
+.case-study-heading ,.head-text{
+    word-wrap: break-word; /* Ensures long words wrap */
+            overflow-wrap: break-word;
+}
+.case-study-image {
+    margin-top: 20px;
+}
+.absolute-image {
+    position: absolute;
+    left: 65%;
+    top: -13%;
+}
+.award-container {
+    grid-template-columns: 1fr;
+}
+footer nav{
+    justify-content: center;
+}
+footer ul{
+    display: none;
+}
+.footer-text h5 {
+    font-size: 50px;
+    font-weight: 250;
+    line-height: 50px;
+}
+.watermark-container {
+    flex-wrap: wrap;
+}
+}
+
 
 
 
