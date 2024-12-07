@@ -393,7 +393,7 @@ text-decoration-skip-ink: none;
 color: #E9DEFF;
 
 }
-    @media screen and (max-width: 805px) {
+    @media only screen and (max-width: 805px) {
     header ul,header button{
         display: none;
     }
