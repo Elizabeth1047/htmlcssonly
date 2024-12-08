@@ -4,6 +4,7 @@ html{
 body{display: flex;
     justify-content: center;
     margin: 0px;
+    background-color: #0B001A;
 }
 main{
     width: 100%;
@@ -134,12 +135,13 @@ font-style: italic;
 font-weight: 400;
 letter-spacing: -0px;
 text-decoration-skip-ink: none;
-background: -webkit-linear-gradient(#8338EC, #B923FF);
+background:linear-gradient(to right,#8338EC, #B923FF);
 background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
 .header-text p{
+    font-family: Montserrat ,system-ui, sans-serif;
     color:#E9DEFF;
 font-size: 24px;
 font-weight: 400;
@@ -174,6 +176,7 @@ color: #E9DEFF;
     margin-top: 40px;
     
 }
+
 .card-content h2,
  .card-content p,
  .tag
@@ -181,13 +184,19 @@ color: #E9DEFF;
     color: #E9DEFF;
 }
 .card-content{
-    background: -webkit-linear-gradient(#8338EC, #B923FF);
+    background: linear-gradient(93.26deg, #8338EC 10.4%, #9C2EF5 101.06%);
     border-radius: 20px;
     padding: 36px;
     display:flex;
     flex-direction: column;
     gap: 97px;
 }
+.art-card-content{
+background:
+linear-gradient(93.26deg, #9E2DF6 10.4%, #B923FF 101.06%);
+}
+
+
 
 .card-content h2{
     font-size: 32px;
@@ -221,7 +230,7 @@ text-decoration-skip-ink: none;
     padding: 40px 40px 43.5px 40px;
     border-radius: 20px;
     justify-content: space-between;
-    margin: 60px 0px 40px 0px;
+    margin: 40px 0px 40px 0px;
 
 }
 .case-study-text{
@@ -267,9 +276,6 @@ text-decoration-skip-ink: none;
     border-radius: 19.17px;
     border: 1px solid #0B001A ;
 }
-.text-button-container{
-    align-self:self-end ;
-}
 .text-button-container p{
 font-size: 14px;
 font-weight: 400;
@@ -311,7 +317,7 @@ font-weight: 500;
 border: 1px solid #E9DEFF ;
 }
 .trailhive button{
-background-image: linear-gradient(90deg, #0B001A, #0B001A),
+background-image: linear-gradient(90deg, #1E0044, #1E0044),
     linear-gradient(90deg, #8338EC, #B923FF);
 }
 .case-study-image{
@@ -441,6 +447,8 @@ footer ul{
 }
 .watermark-container {
     flex-wrap: wrap;
+    justify-content: center;
+        gap: 30px;
 }
 }
 
