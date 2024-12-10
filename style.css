@@ -1,15 +1,25 @@
 html{
     scroll-behavior: smooth;
-}
-body{display: flex;
+    display: flex;
     justify-content: center;
     margin: 0px;
-    background-color: #0B001A;
+    background-color:#0B001A;
 }
-main{
+:root{
+    --bg-primary-dark: #0B001A;
+    --bg-secondary-dark: #F2F0FF;
+    --bg-primary-light: #0B001A;
+    --primary-light:ffff;
+    --color-tertiary: #625D7D;
+    --color-quaternary: #F2F0FF;
+    --family:Montserrat ,system-ui, sans-serif;
+    --padding:fffff;
+    --margin: 20px;
+}
+body{
     width: 100%;
     background-color: #0B001A;
-    font-family: Montserrat ,system-ui, sans-serif;
+    font-family: var(--family);
     padding: 20px;
     margin: 0px;
      max-width: 1600px;
@@ -48,7 +58,7 @@ li a:hover, li a:focus {
 li a span:hover, li a span:focus {
     cursor: pointer;
 }
-section,article, footer{
+footer, section:last-child{
     border-radius: 20px;
     margin-top: 40px;
 }
@@ -58,7 +68,7 @@ header, footer {
     border-radius: 20px;
     
 }
-nav{
+header{
     padding: 20px 40px;
     
 }
@@ -110,7 +120,7 @@ text-transform: uppercase;
   gap: 10px;
 }
 .header-text-content{
-    padding: 40px 40px 40px 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 .header-text{
@@ -284,7 +294,6 @@ text-align: left;
 color: #0B001A;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-padding-right: 100px;
 
 }
 .case-study button{
@@ -400,27 +409,49 @@ color: #E9DEFF;
 
 }
     @media only screen and (max-width: 805px) {
+        header,section,footer,.card-content,.case-study{
+            padding: 20px;
+        }
     header ul,header button{
         display: none;
     }
     .hambuger{
         display: block;
     }
+    .header-text-content {
+    padding: 0px;
+}
+footer, section:last-child{
+    margin-top: 20px;
+}
     h1{
 font-size: 50px;
 font-weight: 250;
 line-height: 50px;
 
 }
-.cards-container ,.tag-container{
+.card-content{
+    gap: 33px;
+}
+.cards-container{
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+
+}
+.tag-container{
     flex-wrap: wrap;
 
 }
 .case-study {
     grid-template-columns: 1fr;
+    margin: 20px 0px 20px 0px;
 }
-.case-study-heading ,.head-text{
-    word-wrap: break-word; /* Ensures long words wrap */
+.case-study-text{
+    gap:50px;
+}
+.case-study-heading , .head-text{
+    word-wrap: break-word;
             overflow-wrap: break-word;
 }
 .case-study-image {
@@ -433,9 +464,11 @@ line-height: 50px;
 }
 .award-container {
     grid-template-columns: 1fr;
+    gap: 70px;
 }
 footer nav{
     justify-content: center;
+    padding: 0px;
 }
 footer ul{
     display: none;
@@ -447,8 +480,10 @@ footer ul{
 }
 .watermark-container {
     flex-wrap: wrap;
-    justify-content: center;
         gap: 30px;
+}
+br{
+    display: none;
 }
 }
 
