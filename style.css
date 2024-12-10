@@ -12,7 +12,7 @@ html{
     --primary-light:ffff;
     --color-tertiary: #625D7D;
     --color-quaternary: #F2F0FF;
-    --family:Montserrat ,system-ui, sans-serif;
+    --family:'Montserrat,system ui,sans-serif';
     --padding:fffff;
     --margin: 20px;
 }
